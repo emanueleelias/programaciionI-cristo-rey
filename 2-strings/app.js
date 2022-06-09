@@ -38,10 +38,11 @@ console.log(nombre.concat(edad));
 console.log("El actor se llama " + nombre + " y tiene " + edad);
 console.log("asdasdsad" , nombre , edad);
 
-//En nuevas versiones se agrego una mejor forma que se conoce como Template String o Template literal - backticks
+//En nuevas versiones se agrego una mejor forma que se //conoce como Template String o Template literal - backticks
 console.log(`El actor se llama ${nombre} y tiene ${edad}`);
 
 //-------------------------------------
+
 //3  Metodos más
 const nombreMascota = "    Artur   ";
 //Elimina los espacios al inicio
@@ -51,3 +52,45 @@ console.log(nombreMascota.trimStart());
 console.log(nombreMascota.trimEnd());
 //Corta los espacios tanto al inicio como al final
 console.log(nombreMascota.trim());
+
+//-------------------------------------
+//3 metodos más .replace, .slice y .repeat
+
+//Replace
+const alumno = "Priscila Fuseneca Aguirre";
+console.log(alumno.replace("Aguirre", "Zapatta"));
+
+//Slice te va a permitir extraer una parte de una cadena
+console.log(alumno.slice(0, 8))//Inicia en 0 y termina en 8
+console.log(alumno.slice(8));
+console.log(alumno.slice(5, 2));
+
+//Substring
+console.log(alumno.substring(2, 5));
+console.log(alumno.substring(5, 2)) //Si el numero es mayor al segundo, va a cortar hacia atras (voltea los numeros)
+
+//Repeat 
+console.log(alumno.repeat(3));
+
+//chartAt
+console.log(alumno.charAt(0));
+
+//Split
+console.log(alumno.split(" "))
+
+const nombreArchivo = "Expedientes de Afiliados";
+console.log(nombreArchivo.split(" ").join("_"));
+//-------------------------------------
+//Join Une los elementos de un arreglo con el caracter que indique
+const nombre2 = ["Aejandro", "Gago", "asdasd"]
+console.log(nombre2.join(" "));
+// Rentas de los conadsasd.pdf
+// rentas_de_los_condasda.pdf
+
+
+//.toUpperCase() - Convertir todo a mayusculas
+console.log(nombreArchivo.toUpperCase());   
+//.toLowerCase() - Convertir todo a minusculas
+console.log(nombreArchivo.toLowerCase());   
+
+console.log(nombreArchivo.split(" ").join("_").toLowerCase());
